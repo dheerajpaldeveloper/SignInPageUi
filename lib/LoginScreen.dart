@@ -134,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Color(0xFF398AE5),
                   ],
                   stops: [
-                    0.01,
+                    0.1,
                     0.3,
                     0.5,
                     0.99
