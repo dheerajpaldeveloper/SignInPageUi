@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Container(
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
-            color: Color(0xFF6CA8F1),
+            color: Colors.red[50],
             borderRadius: BorderRadius.circular(10.0),
             boxShadow: [
               BoxShadow(
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Container(
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
-            color: Color(0xFF6CA8F1),
+            color: Colors.red[50],
             borderRadius: BorderRadius.circular(10.0),
             boxShadow: [
               BoxShadow(
@@ -118,7 +118,8 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildLoginButtonTF() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 25.0),
-      width: double.infinity,
+      width: 150,
+      // width: double.maxFinite,
       child: RaisedButton(
         onPressed: () => print('button click'),
         elevation: 5.0,
@@ -127,7 +128,10 @@ class _LoginScreenState extends State<LoginScreen> {
           borderRadius: BorderRadius.circular(30.0),
         ),
         color: Colors.white,
-        child: Text('Login'),
+        child: Text(
+          'Login',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        ),
       ),
     );
   }
@@ -145,12 +149,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Color(0xFF73AEF5),
-                  Color(0xFF61A4F1),
-                  Color(0xFF478DE0),
-                  Color(0xFF398AE5),
+                  Colors.red[200],
+                  Colors.red[500],
+                  // Colors.greenAccent,
+                  // Colors.blueAccent,
+                  // Color(0xFF478DE0),
+                  // Color(0xFF398AE5),
                 ],
-                stops: [0.1, 0.3, 0.5, 0.99],
+                stops: [0.2, 0.9],
               ),
             ),
           ),
@@ -162,9 +168,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'sign in',
+                    'Sign in',
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontFamily: 'OpenSans',
                         fontSize: 30.0,
                         fontWeight: FontWeight.bold),
